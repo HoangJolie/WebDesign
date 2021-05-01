@@ -7,20 +7,20 @@
         <img src="{{asset('FE/images/11.jpg')}}" alt="" />
         <!--Slider Description example-->
         <div class="slide-desc">
-            <h3>Buy Rice Products Are Now On Line With Us</h3>
+            <h3>Hi</h3>
         </div>
     </li>
     <li>
         <img src="{{asset('FE/images/22.jpg')}}" alt="" />
           <div class="slide-desc">
-            <h3>Whole Spices Products Are Now On Line With Us</h3>
+            <h3>We are Super Market</h3>
         </div>
     </li>
     
     <li>
         <img src="{{asset('FE/images/44.jpg')}}" alt="" />
         <div class="slide-desc">
-            <h3>Whole Spices Products Are Now On Line With Us</h3>
+            <h3>BUY RICE PRODUCTS ARE NOW ON LINE WITH US</h3>
         </div>
     </li>
 </ul>
