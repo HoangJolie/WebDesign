@@ -1,5 +1,5 @@
 @extends('parentlayout')
-@section('welcome')
+@section('homeblade')
 
 <ul id="demo1">
     <li>

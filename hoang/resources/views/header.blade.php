@@ -208,7 +208,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</nav>
 		</div>
 	</div>
-	@yield('welcome')
+		@yield('welcome')
 		@yield('homeblade')
 		@yield('loginblade')
         @yield('registerblade')
