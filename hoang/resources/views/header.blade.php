@@ -29,23 +29,38 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	
 <body>
 <!-- header -->
-	<div class="agileits_header">
+
+
+<div class="agileits_header">
 		<div class="container">
 			<div class="w3l_offers">
 				<p>SALE UP TO 70% OFF. USE CODE "SALE70%" . <a href="products.html">SHOP NOW</a></p>
 			</div>
-			
+			<div class="agile-login">
+				<ul>
+					@php
+						$getCustomerID = Session::get('customer_id');
+						$getCustomerName = Session::get('customer_name');	
+					@endphp
+					@if($getCustomerID == NULL)
+						<li><a href="{{Route('REGISTER')}}"> Create Account </a></li>
+						<li><a href="{{Route('LOGIN')}}">Login</a></li>
+					@else
+						<li>
+							<a href="{{Route('PROFILE')}}">{{$getCustomerName}}</a>
+						</li>
+						<li><a href="{{Route('LOGOUT')}}">Logout</a></li>
+					@endif
+					<li><a href="contact.html">Help</a></li>
+					
+				</ul>
+			</div>
 			<div class="product_list_header">  
-					<form action="#" method="post" class="last"> 
-						<input type="hidden" name="cmd" value="_cart">
-						<input type="hidden" name="display" value="1">
-						<button class="w3view-cart" type="submit" name="submit" value=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
-					</form>  
+					
 			</div>
 			<div class="clearfix"> </div>
 		</div>
 	</div>
-
 	<div class="logo_products">
 		<div class="container">
 		<div class="w3ls_logo_products_left1">
@@ -193,6 +208,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</nav>
 		</div>
 	</div>
+	@yield('welcome')
 		@yield('homeblade')
 		@yield('loginblade')
         @yield('registerblade')

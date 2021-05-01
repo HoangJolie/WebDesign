@@ -1,4 +1,4 @@
-@extends('parentlayout')
+@extends('header')
 @section('loginblade')
 
 <div class="breadcrumbs">
