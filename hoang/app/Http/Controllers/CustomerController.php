@@ -61,15 +61,11 @@ class CustomerController extends Controller
 
 
     public function getProfile(){
-        // return "1";
         $getCustomerId = Session::get('customer_id');
         if($getCustomerId != NULL){
-            // return Redirect()->Route('PROFILE');
             return view('Customer.profile');
         }else{
             return Redirect()->Route('LOGIN');
         }
-        
-        // return Redirect()->Route('PROFILE');
     }
 }

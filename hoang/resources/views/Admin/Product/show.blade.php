@@ -45,7 +45,7 @@
                                 <a href="{{Route('manage_product.edit',$item->product_id)}}" ui-toggle-class="">
                                     <i class="fa fa-check text-success text-active"></i>{{-- edit --}}
                                 </a>
-                                <a href="{{URL('admin/delete/'.$item->product_id)}}" onclick="return confirm('Bạn có chắc muốn xóa không?')" ui-toggle-class="" >
+                                <a href="{{URL('admin/delete/'.$item->product_id)}}" onclick="return confirm('Bạn có chắc muốn xóa sản phẩm này không?')" ui-toggle-class="" >
                                     <i class="fa fa-times text-danger text"></i>
                                   </a>
                             </td>

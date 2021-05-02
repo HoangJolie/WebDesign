@@ -7,6 +7,8 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Redirect;
 use App\Product;
 use Session;
+use App\Http\Requests\ProductRequest;
+
 
 class ProductController extends Controller
 {
@@ -47,7 +49,7 @@ class ProductController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(ProductRequest $request)
     {
         $add = new Product;
 
@@ -100,7 +102,7 @@ class ProductController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update($product_id,Request $request)
+    public function update($product_id,ProductRequest $request)
     {
         $getProductId = Product::findOrFail($product_id);
         $product = $request->all();
