@@ -13,11 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-<<<<<<< HEAD
-=======
-Route::get('/','HomeController@index')->name('WELCOME');
 
->>>>>>> f87eccd970734fae47b4eb3376e59904a760e888
+Route::get('/','HomeController@index')->name('WELCOME');
 
 // Customer
 Route::prefix('customer')->group(function () {

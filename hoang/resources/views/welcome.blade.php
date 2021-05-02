@@ -13,14 +13,14 @@
     <li>
         <img src="{{asset('FE/images/22.jpg')}}" alt="" />
           <div class="slide-desc">
-            <h3>We are Super Market</h3>
+            <h3>I am Nguyen Minh Hoang</h3>
         </div>
     </li>
     
     <li>
         <img src="{{asset('FE/images/44.jpg')}}" alt="" />
         <div class="slide-desc">
-            <h3>BUY RICE PRODUCTS ARE NOW ON LINE WITH US</h3>
+            <h3>Author this website, Greenwich University.</h3>
         </div>
     </li>
 </ul>
