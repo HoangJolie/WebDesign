@@ -42,7 +42,7 @@ class CustomerController extends Controller
 
     public function getLogout(){
         Session::forget('customer_id');
-        return Redirect()->Route('HOMEPAGE');
+        return Redirect()->Route('WELCOME');
     }
 
     public function getRegister(){
